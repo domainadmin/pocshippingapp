@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Trailors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trailorno</th>
+      <th>Truckno</th>
+      <th>Containerno</th>
+      <th>Datetimeval</th>
+      <th>Exportcoff</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trailors.each do |trailor| %>
+      <tr>
+        <td><%= trailor.trailorno %></td>
+        <td><%= trailor.truckno %></td>
+        <td><%= trailor.containerno %></td>
+        <td><%= trailor.datetimeval %></td>
+        <td><%= trailor.exportcoff %></td>
+        <td><%= link_to 'Show', trailor %></td>
+        <td><%= link_to 'Edit', edit_trailor_path(trailor) %></td>
+        <td><%= link_to 'Destroy', trailor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trailor', new_trailor_path %>

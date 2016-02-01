@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Paymentreceives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Clientname</th>
+      <th>Clientcom</th>
+      <th>Desc</th>
+      <th>Invoiceno</th>
+      <th>Invdate</th>
+      <th>Cbendamt</th>
+      <th>Chequen</th>
+      <th>Chqdet</th>
+      <th>Pocbendamt</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @paymentreceives.each do |paymentreceife| %>
+      <tr>
+        <td><%= paymentreceife.clientname %></td>
+        <td><%= paymentreceife.clientcom %></td>
+        <td><%= paymentreceife.desc %></td>
+        <td><%= paymentreceife.invoiceno %></td>
+        <td><%= paymentreceife.invdate %></td>
+        <td><%= paymentreceife.cbendamt %></td>
+        <td><%= paymentreceife.chequen %></td>
+        <td><%= paymentreceife.chqdet %></td>
+        <td><%= paymentreceife.pocbendamt %></td>
+        <td><%= link_to 'Show', paymentreceife %></td>
+        <td><%= link_to 'Edit', edit_paymentreceife_path(paymentreceife) %></td>
+        <td><%= link_to 'Destroy', paymentreceife, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Paymentreceive', new_paymentreceife_path %>

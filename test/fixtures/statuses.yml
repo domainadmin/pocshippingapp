@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tokeno: MyString
+  exrelno: MyString
+  contno: MyString
+  custno: MyString
+  delito: MyString
+  type: 
+  size: MyString
+  custinc: 1
+  weight: 1
+  tollcharge: 1
+  tokencharge: 1
+  detcharge: 1
+  triprent: 1
+  triptotamt: 1
+  drivname: MyString
+  driverbata: 1
+  wghmntbata: 1
+  custbata: 1
+  pocdrivbata: 1
+
+two:
+  tokeno: MyString
+  exrelno: MyString
+  contno: MyString
+  custno: MyString
+  delito: MyString
+  type: 
+  size: MyString
+  custinc: 1
+  weight: 1
+  tollcharge: 1
+  tokencharge: 1
+  detcharge: 1
+  triprent: 1
+  triptotamt: 1
+  drivname: MyString
+  driverbata: 1
+  wghmntbata: 1
+  custbata: 1
+  pocdrivbata: 1

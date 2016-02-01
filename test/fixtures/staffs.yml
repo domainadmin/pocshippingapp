@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  staffname: MyString
+  design: MyString
+  workingdays: 1
+  salary: 1
+  allowance: 1
+
+two:
+  staffname: MyString
+  design: MyString
+  workingdays: 1
+  salary: 1
+  allowance: 1

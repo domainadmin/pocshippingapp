@@ -1,0 +1,37 @@
+<%= form_for(@trailor) do |f| %>
+  <% if @trailor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trailor.errors.count, "error") %> prohibited this trailor from being saved:</h2>
+
+      <ul>
+      <% @trailor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :trailorno %><br>
+    <%= f.text_field :trailorno %>
+  </div>
+  <div class="field">
+    <%= f.label :truckno %><br>
+    <%= f.text_field :truckno %>
+  </div>
+  <div class="field">
+    <%= f.label :containerno %><br>
+    <%= f.text_field :containerno %>
+  </div>
+  <div class="field">
+    <%= f.label :datetimeval %><br>
+    <%= f.datetime_select :datetimeval %>
+  </div>
+  <div class="field">
+    <%= f.label :exportcoff %><br>
+    <%= f.datetime_select :exportcoff %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

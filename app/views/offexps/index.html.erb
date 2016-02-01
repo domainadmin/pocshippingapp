@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Offexps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Offurn</th>
+      <th>Ofstat</th>
+      <th>Offpp</th>
+      <th>Offtbill</th>
+      <th>Offintbill</th>
+      <th>Offroomrent</th>
+      <th>Offrent</th>
+      <th>Offren</th>
+      <th>Offspfee</th>
+      <th>Offstfsal</th>
+      <th>Offstvimed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offexps.each do |offexp| %>
+      <tr>
+        <td><%= offexp.offurn %></td>
+        <td><%= offexp.ofstat %></td>
+        <td><%= offexp.offpp %></td>
+        <td><%= offexp.offtbill %></td>
+        <td><%= offexp.offintbill %></td>
+        <td><%= offexp.offroomrent %></td>
+        <td><%= offexp.offrent %></td>
+        <td><%= offexp.offren %></td>
+        <td><%= offexp.offspfee %></td>
+        <td><%= offexp.offstfsal %></td>
+        <td><%= offexp.offstvimed %></td>
+        <td><%= link_to 'Show', offexp %></td>
+        <td><%= link_to 'Edit', edit_offexp_path(offexp) %></td>
+        <td><%= link_to 'Destroy', offexp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Offexp', new_offexp_path %>

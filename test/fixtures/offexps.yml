@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  offurn: 1
+  ofstat: 1
+  offpp: 1
+  offtbill: 1
+  offintbill: MyString
+  offroomrent: 1
+  offrent: 1
+  offren: 1
+  offspfee: 1
+  offstfsal: 1
+  offstvimed: 1
+
+two:
+  offurn: 1
+  ofstat: 1
+  offpp: 1
+  offtbill: 1
+  offintbill: MyString
+  offroomrent: 1
+  offrent: 1
+  offren: 1
+  offspfee: 1
+  offstfsal: 1
+  offstvimed: 1

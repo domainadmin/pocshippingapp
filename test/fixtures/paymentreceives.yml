@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clientname: MyString
+  clientcom: MyString
+  desc: MyText
+  invoiceno: MyString
+  invdate: 2015-12-25
+  cbendamt: 1
+  chequen: MyString
+  chqdet: MyString
+  pocbendamt: 1
+
+two:
+  clientname: MyString
+  clientcom: MyString
+  desc: MyText
+  invoiceno: MyString
+  invdate: 2015-12-25
+  cbendamt: 1
+  chequen: MyString
+  chqdet: MyString
+  pocbendamt: 1

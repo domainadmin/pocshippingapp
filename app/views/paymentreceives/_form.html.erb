@@ -1,0 +1,53 @@
+<%= form_for(@paymentreceife) do |f| %>
+  <% if @paymentreceife.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@paymentreceife.errors.count, "error") %> prohibited this paymentreceife from being saved:</h2>
+
+      <ul>
+      <% @paymentreceife.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :clientname %><br>
+    <%= f.text_field :clientname %>
+  </div>
+  <div class="field">
+    <%= f.label :clientcom %><br>
+    <%= f.text_field :clientcom %>
+  </div>
+  <div class="field">
+    <%= f.label :desc %><br>
+    <%= f.text_area :desc %>
+  </div>
+  <div class="field">
+    <%= f.label :invoiceno %><br>
+    <%= f.text_field :invoiceno %>
+  </div>
+  <div class="field">
+    <%= f.label :invdate %><br>
+    <%= f.date_select :invdate %>
+  </div>
+  <div class="field">
+    <%= f.label :cbendamt %><br>
+    <%= f.number_field :cbendamt %>
+  </div>
+  <div class="field">
+    <%= f.label :chequen %><br>
+    <%= f.text_field :chequen %>
+  </div>
+  <div class="field">
+    <%= f.label :chqdet %><br>
+    <%= f.text_field :chqdet %>
+  </div>
+  <div class="field">
+    <%= f.label :pocbendamt %><br>
+    <%= f.number_field :pocbendamt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

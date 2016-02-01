@@ -1,0 +1,61 @@
+<%= form_for(@offexp) do |f| %>
+  <% if @offexp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@offexp.errors.count, "error") %> prohibited this offexp from being saved:</h2>
+
+      <ul>
+      <% @offexp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :offurn %><br>
+    <%= f.number_field :offurn %>
+  </div>
+  <div class="field">
+    <%= f.label :ofstat %><br>
+    <%= f.number_field :ofstat %>
+  </div>
+  <div class="field">
+    <%= f.label :offpp %><br>
+    <%= f.number_field :offpp %>
+  </div>
+  <div class="field">
+    <%= f.label :offtbill %><br>
+    <%= f.number_field :offtbill %>
+  </div>
+  <div class="field">
+    <%= f.label :offintbill %><br>
+    <%= f.text_field :offintbill %>
+  </div>
+  <div class="field">
+    <%= f.label :offroomrent %><br>
+    <%= f.number_field :offroomrent %>
+  </div>
+  <div class="field">
+    <%= f.label :offrent %><br>
+    <%= f.number_field :offrent %>
+  </div>
+  <div class="field">
+    <%= f.label :offren %><br>
+    <%= f.number_field :offren %>
+  </div>
+  <div class="field">
+    <%= f.label :offspfee %><br>
+    <%= f.number_field :offspfee %>
+  </div>
+  <div class="field">
+    <%= f.label :offstfsal %><br>
+    <%= f.number_field :offstfsal %>
+  </div>
+  <div class="field">
+    <%= f.label :offstvimed %><br>
+    <%= f.number_field :offstvimed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trailorno: MyString
+  truckno: MyString
+  containerno: MyString
+  datetimeval: 2015-12-25 11:47:48
+  exportcoff: 2015-12-25 11:47:48
+
+two:
+  trailorno: MyString
+  truckno: MyString
+  containerno: MyString
+  datetimeval: 2015-12-25 11:47:48
+  exportcoff: 2015-12-25 11:47:48
