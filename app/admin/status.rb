@@ -1,10 +1,9 @@
 ActiveAdmin.register Status do
     permit_params :tokeno, :exrelno, :contno, :custno, :delito, :type, :size, :custinc, :weight, :tollcharge, :tokencharge, :detcharge, :triprent, :triptotamt, :drivname, :driverbata, :wghmntbata, :custbata, :pocdrivbata 
-    before_filter :skip_sidebar!, :only => :index
     menu label: "Status Report"
     
     index :title => "Status Report" do
-    
+
     end
     form do |f|
         f.inputs "Status" do
