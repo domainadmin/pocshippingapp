@@ -14,5 +14,14 @@ ActiveAdmin.register Trailor do
 #   permitted
 # end
 
-
+form do |f|
+        f.inputs "Trailor" do
+            f.input :trailorno, :label => "Trailor Number"        
+            f.input :truckno, :label => "Truck Number"
+            f.input :containerno, :label => "Container Number"
+            f.input :datetimeval, :label => "Date / Time"
+            f.input :exportcoff, :label => "Export Cutoff"
+        end
+    f.actions
+end
 end

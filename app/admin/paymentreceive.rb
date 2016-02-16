@@ -14,6 +14,14 @@ ActiveAdmin.register Paymentreceive do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
-
+    form do |f|
+        f.inputs "Payment Received" do
+            f.input :clientname, :label => "Client Name"
+            f.input :clientcom, :label => "Client Company"
+            f.input :desc, :label => "Description"
+            f.input :invoiceno, :label => "Invoice number"
+            f.input :invdate, :label => "Invoice date"
+        end
+        f.actions
+    end
 end
