@@ -1,5 +1,5 @@
 ActiveAdmin.register Offexp do
-       permit_params :offurn, :ofstat, :offpp, :offtbill, :offintbill, :offroomrent, :offrent, :offren, :offspfee, :offstfsal, :offstvimed
+       permit_params :offurn, :ofstat, :offpp, :offtbill, :offintbill, :offroomrent, :offrent, :offren, :offspfee, :offstfsal, :offstvimed, :total
     menu label: "Office Expenses"
         before_filter :skip_sidebar!, :only => :index
 
@@ -15,6 +15,9 @@ ActiveAdmin.register Offexp do
         column "Sponsor Fee", :offspfee
         column "Staff Salary", :offstfsal
         column "Visa & Medical", :offstvimed
+        column "Total", :total do  
+            :offstfsal.to_i + :offstvimed.to_i
+        end
         actions
     end
 # See permitted parameters documentation:

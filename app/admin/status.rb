@@ -1,10 +1,30 @@
 ActiveAdmin.register Status do
-    permit_params :tokeno, :exrelno, :contno, :custno, :delito, :type, :size, :custinc, :weight, :tollcharge, :tokencharge, :detcharge, :triprent, :triptotamt, :drivname, :driverbata, :wghmntbata, :custbata, :pocdrivbata 
+    permit_params :tokeno, :exrelno, :contno, :custno, :delito, :type, :size, :custinc, :weight, :tollcharge, :tokencharge, :detcharge, :triprent, :triptotamt, :drivname, :driverbata, :wghmntbata, :custbata, :pocdrivbata, :total
     menu label: "Status Report"
     
     index :title => "Status Report" do
 
     end
+    filter :tokeno, :label => "Token Number"
+    filter :exrelno, :label => "Export Release number"
+    filter :contno, :label => "Container number"
+    filter :custno, :label => "Customer number"
+    filter :delito, :label => "Delivery To"
+    filter :type, :label => "Delivery Type"
+    filter :size, :label => "Size"
+    filter :custinc, :label => "Customs Inspection Charges"
+    filter :weight, :label => "Weight"
+    filter :tollcharge, :label => "Toll Charge"
+    filter :tokencharge, :label => "Token Charge"
+    filter :detcharge, :label => "Detention Charge"
+    filter :triprent, :label => "Trip rent"
+    filter :triptotamt, :label => "Trip total amount"
+    filter :drivname, :label => "Driver name"
+    filter :driverbata, :label => "Driver Bata"
+    filter :wghmntbata, :label => "W Mgnt Bata"
+    filter :custbata, :label => "Customer Bata"
+    filter :pocdrivbata, :label => "POC Driver Bata"
+    
     form do |f|
         f.inputs "Status" do
             f.input :tokeno, :label => "Token number"
@@ -26,6 +46,7 @@ ActiveAdmin.register Status do
             f.input :wghmntbata, :label => "W Mgnt Bata"
             f.input :custbata, :label => "Customer Bata"
             f.input :pocdrivbata, :label => "POC Driver Bata"
+            f.input :total, :label => "Total", :input_html => { :disabled => true } 
         end
         f.actions
     end

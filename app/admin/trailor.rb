@@ -10,6 +10,13 @@ ActiveAdmin.register Trailor do
         column "Export Cutoff", :exportcoff
         actions
     end
+    
+    filter :trailorno, :label => "Trailor Number"
+    filter :truckno, :label => "Truck Number"
+    filter :containerno, :label => "Container Number"
+    filter :datetimeval, :label => "Date / Time"
+    filter :exportcoff, :label => "Export Cutoff"
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
