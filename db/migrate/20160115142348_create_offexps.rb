@@ -5,7 +5,7 @@ class CreateOffexps < ActiveRecord::Migration
       t.integer :ofstat
       t.integer :offpp
       t.integer :offtbill
-      t.string :offintbill
+    t.integer :offintbill
       t.integer :offroomrent
       t.integer :offrent
       t.integer :offren

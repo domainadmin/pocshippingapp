@@ -15,7 +15,9 @@ ActiveAdmin.register Offexp do
         column "Sponsor Fee", :offspfee
         column "Staff Salary", :offstfsal
         column "Visa & Medical", :offstvimed
-
+        column "Total" do |sum|
+            sum.offurn.to_s.to_i + sum.ofstat.to_s.to_i + sum.offpp.to_s.to_i + sum.offtbill.to_s.to_i + sum.offintbill.to_s.to_i + sum.offroomrent.to_s.to_i + sum.offrent.to_s.to_i + sum.offspfee.to_s.to_i + sum.offstfsal.to_s.to_i + sum.offstvimed.to_s.to_i
+        end
         actions
     end
 # See permitted parameters documentation:
