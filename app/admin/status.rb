@@ -46,7 +46,6 @@ ActiveAdmin.register Status do
             f.input :wghmntbata, :label => "W Mgnt Bata"
             f.input :custbata, :label => "Customer Bata"
             f.input :pocdrivbata, :label => "POC Driver Bata"
-            f.input :total, :label => "Total", :input_html => { :disabled => true } 
         end
         f.actions
     end
