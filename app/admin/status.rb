@@ -1,4 +1,5 @@
 ActiveAdmin.register Status do
+    active_admin_importable
     permit_params :tokeno, :exrelno, :contno, :custno, :delito, :type, :size, :custinc, :weight, :tollcharge, :tokencharge, :detcharge, :triprent, :triptotamt, :drivname, :driverbata, :wghmntbata, :custbata, :pocdrivbata, :total
     menu label: "Status Report"
     
